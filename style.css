@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #FFB800;
-    --secondary-color: #FF6B00;
-    --dark-color: #2C1810;
-    --light-color: #FFF5E6;
+    --primary-color: #c68a3a;
+    --secondary-color: #76220b;
+    --dark-color: #76220b;
+    --light-color: #fff3e1;
     --text-color: #333;
     --white: #FFFFFF;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playpen Sans', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
@@ -45,9 +45,20 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
 .logo h1 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary-color);
+    font-family: 'Telegraf';
+    color: var(--secondary-color);
     font-size: 1.8rem;
 }
 
@@ -69,7 +80,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--light-color) 0%, #FFE5B4 100%);
+    background: linear-gradient(135deg, var(--light-color) 0%, #f5e5d3 100%);
     padding: 4rem 2rem;
     display: flex;
     align-items: center;
@@ -84,7 +95,7 @@ body {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Telegraf', sans-serif;
     font-size: 3.5rem;
     color: var(--dark-color);
     margin-bottom: 1rem;
@@ -104,8 +115,10 @@ body {
     align-items: center;
 }
 
-.pudim-placeholder {
-    font-size: 15rem;
+.hero-pudim {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
     filter: drop-shadow(var(--shadow-lg));
     animation: float 3s ease-in-out infinite;
 }
@@ -165,11 +178,15 @@ section {
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Telegraf', sans-serif;
     font-size: 2.5rem;
     color: var(--dark-color);
     text-align: center;
     margin-bottom: 1rem;
+}
+
+h3, h4 {
+    font-family: 'Telegraf', sans-serif;
 }
 
 .section-description {
@@ -279,15 +296,19 @@ section {
     padding: 2rem;
     border-radius: 15px;
     transition: transform 0.3s;
+    overflow: hidden;
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
 }
 
-.gallery-item .pudim-placeholder {
-    font-size: 8rem;
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     margin-bottom: 1rem;
+    box-shadow: var(--shadow);
 }
 
 .gallery-item p {
@@ -297,7 +318,7 @@ section {
 
 /* Depoimentos */
 .depoimentos {
-    background: linear-gradient(135deg, var(--light-color) 0%, #FFE5B4 100%);
+    background: linear-gradient(135deg, var(--light-color) 0%, #f5e5d3 100%);
 }
 
 .testimonials {
@@ -356,7 +377,7 @@ section {
 .price {
     font-size: 4rem;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Telegraf', sans-serif;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
@@ -485,35 +506,35 @@ section {
         text-align: center;
         padding: 3rem 1rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .pudim-placeholder {
         font-size: 10rem;
     }
-    
+
     .nav {
         gap: 1rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
     }
-    
+
     .btn-large {
         width: 100%;
     }
-    
+
     .price {
         font-size: 3rem;
     }
@@ -523,15 +544,15 @@ section {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .logo h1 {
         font-size: 1.3rem;
     }
-    
+
     .nav {
         font-size: 0.9rem;
     }
-    
+
     .pudim-placeholder {
         font-size: 8rem;
     }
