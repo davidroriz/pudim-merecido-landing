@@ -539,6 +539,11 @@ h3, h4 {
         padding: 3rem 1rem;
     }
 
+    .hero-pudim {
+        width: 100%;
+        max-width: 350px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -601,6 +606,11 @@ h3, h4 {
 
     .hero-title {
         font-size: 1.8rem;
+    }
+
+    .hero-pudim {
+        width: 100%;
+        max-width: 280px;
     }
 
     .section-title {
