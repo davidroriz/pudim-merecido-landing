@@ -4,7 +4,9 @@ Landing page profissional para venda de pudim artesanal. Site moderno, responsiv
 
 ## 🚀 Demo
 
-Acesse: [https://seu-usuario.github.io/pudim-merecido-landing](https://seu-usuario.github.io/pudim-merecido-landing)
+Acesse: [https://www.pudimmerecido.com.br](https://www.pudimmerecido.com.br)
+
+> 📖 **Guia completo de deploy:** Veja o arquivo [DEPLOY.md](DEPLOY.md) para instruções detalhadas passo a passo.
 
 ## ✨ Funcionalidades
 
@@ -31,8 +33,11 @@ pudim-merecido-landing/
 ├── index.html          # Página principal
 ├── style.css          # Estilos e responsividade
 ├── script.js          # Interatividade e animações
+├── CNAME              # Configuração de domínio customizado
+├── DEPLOY.md          # Guia completo de publicação
 ├── context.md         # Documentação de arquitetura
 ├── README.md          # Este arquivo
+├── .gitignore         # Arquivos ignorados pelo Git
 └── images/            # Imagens do produto
 ```
 
@@ -86,6 +91,61 @@ http://localhost:8000
    ```
    https://seu-usuario.github.io/pudim-merecido-landing
    ```
+
+### Usar Domínio Customizado (www.pudimmerecido.com.br)
+
+#### 1. Configurar DNS no Registro.br
+
+Acesse o painel do [Registro.br](https://registro.br) e configure os seguintes registros DNS:
+
+**Para usar www.pudimmerecido.com.br:**
+
+```
+Tipo: CNAME
+Nome: www
+Dados: seu-usuario.github.io
+TTL: 3600 (ou padrão)
+```
+
+**Para redirecionar o domínio raiz (pudimmerecido.com.br) para www:**
+
+```
+Tipo: A (criar 4 registros)
+Nome: @
+Dados (adicione todos):
+  185.199.108.153
+  185.199.109.153
+  185.199.110.153
+  185.199.111.153
+TTL: 3600 (ou padrão)
+```
+
+> ⚠️ **Importante:** A propagação DNS pode levar de **15 minutos a 48 horas**. Seja paciente!
+
+#### 2. Configurar GitHub Pages
+
+1. Faça push do arquivo `CNAME` (já incluído no projeto)
+2. No GitHub, vá em **Settings** → **Pages**
+3. Em **Custom domain**, digite: `www.pudimmerecido.com.br`
+4. Clique em **Save**
+5. Aguarde a verificação do DNS
+6. Marque a opção **Enforce HTTPS** (após verificação)
+
+#### 3. Verificar Configuração
+
+Após a propagação, teste:
+
+```bash
+# Verificar DNS
+nslookup www.pudimmerecido.com.br
+
+# Ou usar online
+# https://www.whatsmydns.net/
+```
+
+Seu site estará disponível em:
+- ✅ https://www.pudimmerecido.com.br
+- ✅ https://pudimmerecido.com.br (redirecionará para www)
 
 ## ⚙️ Personalização
 
