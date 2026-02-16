@@ -6,8 +6,6 @@ Landing page profissional para venda de pudim artesanal. Site moderno, responsiv
 
 Acesse: [https://www.pudimmerecido.com.br](https://www.pudimmerecido.com.br)
 
-> 📖 **Guia completo de deploy:** Veja o arquivo [DEPLOY.md](DEPLOY.md) para instruções detalhadas passo a passo.
-
 ## ✨ Funcionalidades
 
 - 🎨 Design moderno e atrativo
@@ -34,7 +32,6 @@ pudim-merecido-landing/
 ├── style.css          # Estilos e responsividade
 ├── script.js          # Interatividade e animações
 ├── CNAME              # Configuração de domínio customizado
-├── DEPLOY.md          # Guia completo de publicação
 ├── context.md         # Documentação de arquitetura
 ├── README.md          # Este arquivo
 ├── .gitignore         # Arquivos ignorados pelo Git
