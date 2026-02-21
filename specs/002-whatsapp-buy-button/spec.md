@@ -1,8 +1,10 @@
 # Feature Specification: Substituir Botão Copiar por Link WhatsApp
 
-**Feature Branch**: `002-whatsapp-buy-button`  
-**Created**: 21 de fevereiro de 2026  
-**Status**: Draft  
+**Feature Branch**: `002-whatsapp-buy-button`
+**Created**: 21 de fevereiro de 2026
+**Status**: Implemented
+**Implemented**: 21 de fevereiro de 2026
+**Commit**: faf9951
 **Input**: Substituir o botão de copiar código do banner de desconto por um link de Comprar que leve para o link do pudim merecido no whatsapp
 
 ## User Scenarios & Testing
