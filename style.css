@@ -407,21 +407,23 @@ h3, h4 {
     color: var(--discount-text-dark);
     text-decoration: none;
     display: inline-block;
-}
-
-.whatsapp-button {
-    background: #25D366;
-    color: #FFFFFF;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
 }
 
 .copy-button:hover,
 .whatsapp-button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow);
-}
-
-.whatsapp-button:hover {
-    background: #1da851;
+    background: var(--discount-banner-bg);
+    filter: brightness(0.95);
 }
 
 .copy-button:active,
