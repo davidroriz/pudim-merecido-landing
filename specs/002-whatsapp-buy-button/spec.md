@@ -2,9 +2,13 @@
 
 **Feature Branch**: `002-whatsapp-buy-button`
 **Created**: 21 de fevereiro de 2026
-**Status**: In Progress - Revision
+**Status**: Implemented (Revised)
+**Implemented**: 21 de fevereiro de 2026
 **Last Updated**: 21 de fevereiro de 2026
-**Previous Commit**: faf9951
+**Commits**: 
+- faf9951 - Initial implementation (WhatsApp green)
+- 4a1d497 - Spec revision (visual identity requirements)
+- 0339f19 - Visual identity redesign (modal colors)
 **Input Original**: Substituir o botão de copiar código do banner de desconto por um link de Comprar que leve para o link do pudim merecido no whatsapp
 **Input Revision**: Refazer o botão de Comprar via WhatsApp respeitando a identidade visual dos elementos existentes na modal
 
