@@ -2,10 +2,11 @@
 
 **Feature Branch**: `002-whatsapp-buy-button`
 **Created**: 21 de fevereiro de 2026
-**Status**: Implemented
-**Implemented**: 21 de fevereiro de 2026
-**Commit**: faf9951
-**Input**: Substituir o botão de copiar código do banner de desconto por um link de Comprar que leve para o link do pudim merecido no whatsapp
+**Status**: In Progress - Revision
+**Last Updated**: 21 de fevereiro de 2026
+**Previous Commit**: faf9951
+**Input Original**: Substituir o botão de copiar código do banner de desconto por um link de Comprar que leve para o link do pudim merecido no whatsapp
+**Input Revision**: Refazer o botão de Comprar via WhatsApp respeitando a identidade visual dos elementos existentes na modal
 
 ## User Scenarios & Testing
 
@@ -42,7 +43,12 @@ Visitante clica no banner de desconto, visualiza o código MEUMERECIDO no modal 
 - **FR-002**: Botão WhatsApp MUST usar link formatado: `https://wa.me/5561981375389?text=[mensagem_url_encoded]`
 - **FR-003**: Mensagem pré-preenchida MUST incluir: "Olá! Gostaria de encomendar um Pudim Merecido. Tenho o código MEUMERECIDO para 10% de desconto!"
 - **FR-004**: Botão MUST abrir link em nova aba (_blank) com rel="noopener noreferrer"
-- **FR-005**: Botão MUST manter estilo visual consistente com design system (cores, fontes, espaçamento)
+- **FR-005**: Botão MUST usar identidade visual da modal existente:
+  - Cor de fundo: Amarelo/laranja da modal (#FFB347 - var(--discount-banner-bg))
+  - Cor do texto: Marrom escuro (#2C1810 - var(--discount-text-dark))
+  - Mesma tipografia e espaçamento dos outros botões da modal
+  - Efeitos hover consistentes com elementos existentes (transform, shadow)
+  - **NÃO usar verde do WhatsApp (#25D366)** - deve integrar-se harmoniosamente ao esquema de cores da modal
 - **FR-006**: GA4 MUST rastrear evento "whatsapp_buy_click" quando botão é clicado
 - **FR-007**: Botão MUST ser responsivo (funcionando em desktop, tablet, mobile)
 - **FR-008**: Botão MUST ser acessível via teclado (Tab + Enter)
@@ -66,7 +72,8 @@ Visitante clica no banner de desconto, visualiza o código MEUMERECIDO no modal 
 
 **Qualitative**:
 - Usuários conseguem completar ação de compra sem precisar lembrar/digitar código manualmente
-- Botão é visualmente proeminente no modal (cor primária, tamanho adequado)
+- Botão se integra harmoniosamente à identidade visual da modal (mantém consistência cromática)
+- Botão é visualmente proeminente através de tamanho, posicionamento e tipografia (não através de cor contrastante)
 - Experiência é fluida em todos os dispositivos (desktop/mobile/tablet)
 
 ## Assumptions
