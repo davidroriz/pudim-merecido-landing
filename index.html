@@ -38,6 +38,13 @@
         </div>
     </section>
 
+    <!-- Desconto Primeira Compra -->
+    <section class="discount-banner" role="region" aria-label="Desconto para primeira compra">
+        <div class="container">
+            <p class="discount-banner-text">🎉 Você ganhou 10% de desconto em sua primeira compra! Clique para revelar seu código</p>
+        </div>
+    </section>
+
     <!-- Sobre o Produto -->
     <section id="produto" class="produto">
         <div class="container">
@@ -192,6 +199,10 @@
                         <a href="https://www.tiktok.com/@pudimmerecido" target="_blank">TikTok</a>
                     </div>
                 </div>
+
+                <div class="footer-section">
+                    <p class="promo-reminder">Primeira compra? Use o código <strong>MEUMERECIDO</strong> para ganhar 10% de desconto!</p>
+                </div>
             </div>
 
             <div class="footer-bottom">
@@ -209,6 +220,33 @@
     <a href="https://wa.me/5561981375389?text=Olá!%20Gostaria%20de%20encomendar%20um%20Pudim%20Merecido!" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
         <span class="whatsapp-icon">💬</span>
     </a>
+
+    <!-- Desconto Modal -->
+    <div id="discountModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display: none;">
+        <div class="discount-modal" tabindex="-1">
+            <button class="modal-close-btn" aria-label="Fechar modal" onclick="window.discountFeature.closeModal()">
+                ✕
+            </button>
+            <h2 id="modalTitle" class="modal-title">Seu Código de Desconto</h2>
+            <div class="promo-code-container">
+                <span class="promo-code" id="promoCode">MEUMERECIDO</span>
+            </div>
+            <p class="modal-subtitle">10% de desconto na sua primeira compra!</p>
+            <div class="modal-actions">
+                <a href="https://wa.me/5561981375389?text=Ol%C3%A1%21%20Gostaria%20de%20encomendar%20um%20Pudim%20Merecido.%20Tenho%20o%20c%C3%B3digo%20MEUMERECIDO%20para%2010%25%20de%20desconto%21" 
+                   class="whatsapp-button" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   onclick="window.discountFeature.trackWhatsAppClick()"
+                   id="whatsappBtn">
+                    💬 Comprar via WhatsApp
+                </a>
+                <button class="close-button" onclick="window.discountFeature.closeModal()">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

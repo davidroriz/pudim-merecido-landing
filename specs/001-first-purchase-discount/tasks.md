@@ -37,11 +37,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase completes
 
-- [ ] T004 Create CSS variables for discount feature in `style.css`: `--discount-banner-bg`, `--discount-text` (using CONSTITUTION.md palette)
-- [ ] T005 [P] Add HTML semantic structure for banner container in `index.html` (after hero section, before beneficios section)
-- [ ] T006 [P] Add HTML semantic structure for modal overlay + dialog in `index.html` (before closing `</body>`)
-- [ ] T007 Create JavaScript namespace for discount feature: `window.discountFeature = {}` in `script.js`
-- [ ] T008 Configure GA4 event tracker setup in `script.js` - ensure events will fire with proper payload structure
+- [X] T004 Create CSS variables for discount feature in `style.css`: `--discount-banner-bg`, `--discount-text` (using CONSTITUTION.md palette)
+- [X] T005 [P] Add HTML semantic structure for banner container in `index.html` (after hero section, before beneficios section)
+- [X] T006 [P] Add HTML semantic structure for modal overlay + dialog in `index.html` (before closing `</body>`)
+- [X] T007 Create JavaScript namespace for discount feature: `window.discountFeature = {}` in `script.js`
+- [X] T008 Configure GA4 event tracker setup in `script.js` - ensure events will fire with proper payload structure
 
 **Checkpoint**: Foundation ready - user story implementation can now begin ✅
 
@@ -58,26 +58,26 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 [US1] Update `.hero` section in `index.html` - add semantic `<section class="discount-banner">` after hero-content
-- [ ] T010 [US1] Write banner HTML structure in `index.html`:
+- [X] T009 [US1] Update `.hero` section in `index.html` - add semantic `<section class="discount-banner">` after hero-content
+- [X] T010 [US1] Write banner HTML structure in `index.html`:
   - Wrapper: `<section class="discount-banner" role="region" aria-label="First purchase discount">`
   - Content: `<p>Você ganhou 10% de desconto em sua primeira compra! Clique para revelar seu código</p>`
   - Interactive hint: Include visual indicator (cursor: pointer, chevron icon)
-- [ ] T011 [P] [US1] Create `.discount-banner` base styles in `style.css`:
+- [X] T011 [P] [US1] Create `.discount-banner` base styles in `style.css`:
   - Background color: `--color-accent` (#FFB347) or `--color-secondary` (#D2691E)
   - Padding: `--spacing-md` (24px) per CONSTITUTION.md
   - Text: Playpen Sans Bold, font-size 18px mobile / 20px desktop
   - Border-radius: `--border-radius` (8px)
   - Margin: `--spacing-md` vertical spacing
-- [ ] T012 [P] [US1] Create `.discount-banner` interactive styles in `style.css`:
+- [X] T012 [P] [US1] Create `.discount-banner` interactive styles in `style.css`:
   - Default: neutral appearance, pointer cursor
   - Hover: subtle background shift, slight scale (1.02x)
   - Active: shadow feedback (--shadow-md)
-- [ ] T013 [P] [US1] Add mobile responsivity for `.discount-banner` in `style.css`:
+- [X] T013 [P] [US1] Add mobile responsivity for `.discount-banner` in `style.css`:
   - Media query: (min-width: 641px) → adjust padding and font-size
   - Ensure no text truncation on 320px screens
   - Test breakpoints: 320px, 640px, 1024px, 1920px
-- [ ] T014 [US1] Add accessibility features to banner in `style.css`:
+- [X] T014 [US1] Add accessibility features to banner in `style.css`:
   - High contrast text (dark text on light background, min 4.5:1 ratio per WCAG AA)
   - Add focus styles for keyboard navigation: `outline: 2px solid --color-primary`
   - Ensure skip-link or direct keyboard access
@@ -99,24 +99,24 @@
 
 ### Implementation for User Story 2
 
-- [ ] T015 [US2] Write modal HTML structure in `index.html` (before `</body>`):
+- [X] T015 [US2] Write modal HTML structure in `index.html` (before `</body>`):
   - Overlay: `<div id="discountModal" class="modal-overlay" role="dialog" aria-labelledby="modalTitle">`
   - Content: Code MEUMERECIDO in `<span class="promo-code">MEUMERECIDO</span>`
   - Actions: Copy button, Close button (X)
   - Accessibility: `aria-modal="true"`, `aria-label`, focus trap
-- [ ] T016 [P] [US2] Create `.modal-overlay` styles in `style.css`:
+- [X] T016 [P] [US2] Create `.modal-overlay` styles in `style.css`:
   - Fixed positioning, full viewport coverage (100vh, 100vw)
   - Semi-transparent backdrop: `rgba(0, 0, 0, 0.6)`
   - Flexbox center alignment
   - z-index: 9999 (prevent conflicts, documented in CSS)
-- [ ] T017 [P] [US2] Create `.discount-modal` card styles in `style.css`:
+- [X] T017 [P] [US2] Create `.discount-modal` card styles in `style.css`:
   - Background: white (#FFFFFF)
   - Padding: `--spacing-lg` (32px)
   - Border-radius: `--border-radius` (8px)
   - Shadow: `--shadow-lg`
   - Width: 90vw mobile / 600px desktop (max-width: 600px)
   - Center positioned
-- [ ] T018 [P] [US2] Style `.promo-code` display in `style.css`:
+- [X] T018 [P] [US2] Style `.promo-code` display in `style.css`:
   - Font-size: 48px mobile / 64px desktop
   - Font-weight: Bold (700)
   - Font-family: Playpen Sans (brand-aligned)
@@ -125,30 +125,30 @@
   - User-select: all (easy copy)
   - Border: 2px dashed `--color-accent` (visual emphasis)
   - Padding: `--spacing-md`
-- [ ] T019 [P] [US2] Style modal action buttons in `style.css`:
+- [X] T019 [P] [US2] Style modal action buttons in `style.css`:
   - `.copy-button`: Background `--color-accent`, hover state, active feedback
   - `.close-button`: Minimal style (X icon), positioned top-right, contrast-compliant
   - Both: Focus states for keyboard nav, min 44px clickable area (mobile-friendly)
-- [ ] T020 [US2] Implement modal open/close logic in `script.js`:
+- [X] T020 [US2] Implement modal open/close logic in `script.js`:
   - Function: `discountFeature.openModal()` - shows modal, prevents body scroll
   - Function: `discountFeature.closeModal()` - hides modal, restores scroll
   - Event: Click banner → calls `openModal()`
   - Event: Click close button → calls `closeModal()`
   - Event: Click overlay (outside modal) → calls `closeModal()`
   - Keyboard: ESC key → calls `closeModal()`
-- [ ] T021 [US2] Implement clipboard copy functionality in `script.js`:
+- [X] T021 [US2] Implement clipboard copy functionality in `script.js`:
   - Function: `discountFeature.copyPromoCode()`
   - Uses Clipboard API: `navigator.clipboard.writeText("MEUMERECIDO")`
   - Fallback: If Clipboard API unavailable, show input field with text selected
   - Feedback: Change copy button text to "Copiado!" for 2 seconds
   - Event: GA4 event `copy_code_success` triggered
-- [ ] T022 [US2] Implement GA4 event tracking in `script.js`:
+- [X] T022 [US2] Implement GA4 event tracking in `script.js`:
   - Event 1: `click_discount_code` - fired when banner is clicked
     - Properties: `discount_percentage: 10`, `promo_code: "MEUMERECIDO"`, `interaction_type: "click_banner"`
   - Event 2: `copy_code_success` - fired when copy button clicked
     - Properties: `discount_percentage: 10`, `promo_code: "MEUMERECIDO"`, `interaction_type: "copy"`
   - Ensure `gtag('event', ...)` respects GDPR/consent settings if applicable
-- [ ] T023 [US2] Add keyboard accessibility to modal in `script.js`:
+- [X] T023 [US2] Add keyboard accessibility to modal in `script.js`:
   - Focus trap: Tab stays within modal when open
   - ESC closes modal
   - Focus management: Focus modal on open, restore focus on close
@@ -170,17 +170,17 @@
 
 ### Implementation for User Story 3
 
-- [ ] T024 [US3] Locate footer section in `index.html` and identify footer contact area
-- [ ] T025 [US3] Add footer reminder text in `index.html`:
+- [X] T024 [US3] Locate footer section in `index.html` and identify footer contact area
+- [X] T025 [US3] Add footer reminder text in `index.html`:
   - Within footer contact section, add: `<p class="promo-reminder">Primeira compra? Use o código <strong>MEUMERECIDO</strong> para ganhar 10% de desconto!</p>`
   - Keep it subtle (informational, not pushy)
-- [ ] T026 [P] [US3] Create `.promo-reminder` styles in `style.css`:
+- [X] T026 [P] [US3] Create `.promo-reminder` styles in `style.css`:
   - Font-size: 14px
   - Font-family: Telegraf (body text, per CONSTITUTION.md)
   - Color: `--color-text-dark` with sufficient contrast
   - Margin: `--spacing-sm` (16px)
   - Font-weight: Normal, with `<strong>` emphasis on code
-- [ ] T027 [P] [US3] Add mobile responsivity for footer reminder in `style.css`:
+- [X] T027 [P] [US3] Add mobile responsivity for footer reminder in `style.css`:
   - Ensure readable on 320px screens
   - Maintain line-length < 80 characters for readability
 

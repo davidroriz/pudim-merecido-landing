@@ -1,8 +1,8 @@
 # Feature Specification: First Purchase Discount Announcement
 
-**Feature Branch**: `001-first-purchase-discount`  
-**Created**: 21 de fevereiro de 2026  
-**Status**: In Clarification  
+**Feature Branch**: `001-first-purchase-discount`
+**Created**: 21 de fevereiro de 2026
+**Status**: In Clarification
 **Input**: User description: "Desejo incluir em algum lugar da página um anúncio que informe ao usuário que ele acabou de ganhar 10% de desconto em sua primeira compra. Para ter direito ao desconto ele deverá informar o código MEUMERECIDO quando entrar em contato para efetuar a compra."
 
 ## Clarifications
@@ -21,7 +21,7 @@
   IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
   Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
   you should still have a viable MVP (Minimum Viable Product) that delivers value.
-  
+
   Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
   Think of each story as a standalone slice of functionality that can be:
   - Developed independently
