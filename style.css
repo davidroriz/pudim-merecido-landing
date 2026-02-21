@@ -93,7 +93,8 @@ body {
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    max-width: 1800px;
+    text-align: center;
 }
 
 .hero-title {
