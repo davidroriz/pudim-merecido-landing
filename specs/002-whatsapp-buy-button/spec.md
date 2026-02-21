@@ -5,7 +5,7 @@
 **Status**: Implemented (Revised)
 **Implemented**: 21 de fevereiro de 2026
 **Last Updated**: 21 de fevereiro de 2026
-**Commits**: 
+**Commits**:
 - faf9951 - Initial implementation (WhatsApp green)
 - 4a1d497 - Spec revision (visual identity requirements)
 - 0339f19 - Visual identity redesign (modal colors)

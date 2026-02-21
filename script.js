@@ -65,7 +65,7 @@ window.discountFeature = window.discountFeature || {
             });
         }
     },
-    
+
     // Copy promo code to clipboard (kept for backward compatibility)
     copyPromoCode: function() {
         const code = this.promoCode;
