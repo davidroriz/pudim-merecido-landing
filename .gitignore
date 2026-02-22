@@ -53,5 +53,50 @@ DEPLOY.md
 # Arquivos de build (caso use processadores no futuro)
 dist/
 build/
+out/
+docs/_site/
+site/
+.jekyll-cache/
+_site/
+
+# Sourcemaps e arquivos compilados
 *.min.js.map
 *.min.css.map
+*.css.map
+*.js.map
+
+# Sass/LESS compilados
+*.css.map
+.sass-cache/
+*.sass-cache
+
+# Node.js (se usar npm para processar assets)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python virtual environment (para ferramentas de build)
+venv/
+env/
+ENV/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Teste e cobertura
+coverage/
+.coverage
+.nyc_output/
+test-results/
+*.lcov
+
+# Artifacts de CI/CD
+.github/artifacts/
+dist/
+release/
+
+# Arquivos de configuração sensível
+.env*
+!.env.example
